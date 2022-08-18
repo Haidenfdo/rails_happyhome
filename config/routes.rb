@@ -1,33 +1,35 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root 'home#index'
+
+  
   get 'accomadtion/index'
   get 'posts/index'
   get 'session/index'
   get 'users/index'
-  root 'home#index'
 
-  match '/index', to: 'home#index', via: :get
+  match 'index', to: 'home#index', via: :get
 
-  match '/about', to: 'home#about', via: :get
+  match 'about', to: 'home#about', via: :get
 
-  match '/contact', to: 'home#contact', via: :get
+  match 'contact', to: 'home#contact', via: :get
 
-  match '/boot', to: 'home#boot', via: :get
+  match 'boot', to: 'home#boot', via: :get
 
   match 'users/create', to: 'users#create', via: :post
 
   match 'session/create', to: 'session#create', via: :post
 
-  match '/logout', to: 'session#logout', via: :get
+  match 'logout', to: 'session#logout', via: :get
 
-  match '/pg', to: 'accomadtion#pg', via: :get
+  match 'pg', to: 'accomadtion#pg', via: :get
 
-  match '/apartments',to: 'accomadtion#apartments', via: :get
+  match 'apartments',to: 'accomadtion#apartments', via: :get
 
-  match '/hostel',to: 'accomadtion#hostel', via: :get
+  match 'hostel',to: 'accomadtion#hostel', via: :get
 
-  match '/house',to: 'accomadtion#home', via: :get
+  match 'house',to: 'accomadtion#home', via: :get
 
   get 'baby_pg/:id', to: 'accomadtion#baby_pg'
 
