@@ -1,0 +1,6 @@
+{
+
+    "application.js": "/app/javascript/packs/application.js",
+    "application.js.map": "/app/javascript/packs/application.js.map"
+
+}

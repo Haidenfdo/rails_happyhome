@@ -27,7 +27,7 @@ shown as a message.
 
 #### User flow
 
-###### feature 1 : Filter
+##### feature 1 : Filter
 
 * In the Pg page there will be a filtering options.
 * Onclicking the filter options.It will filter by the options we clicked.
